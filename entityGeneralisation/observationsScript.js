@@ -16,7 +16,7 @@ var ObjectId = require('mongodb').ObjectID;
         for (let pointerToObservations = 0; pointerToObservations < chunkOfObservationsDocument.length; pointerToObservations++) {
             
             let dataArray = [];
-            let num=0;
+            
             await chunkOfObservationsDocument[pointerToObservations].map(
                 observationsDoc => {
                     let data = {};
@@ -28,7 +28,7 @@ var ObjectId = require('mongodb').ObjectID;
             );
            
             
-           let location = [];
+           
             for( entityIdpointer = 0; entityIdpointer < dataArray.length; entityIdpointer++){
                     
                     for( entityIndex = 0; entityIndex < dataArray[entityIdpointer].entity.length; entityIndex++){
