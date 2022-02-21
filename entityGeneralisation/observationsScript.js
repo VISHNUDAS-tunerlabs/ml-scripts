@@ -43,8 +43,7 @@ var ObjectId = require('mongodb').ObjectID;
                             if(entitiesDocument.length < 1){
                                 dataArray[entityIdpointer].entity[entityIndex] = [];
                             }
-                            dataArray[entityIdpointer].entity[entityIndex] = entityDocuments[0].registryDetails.locationId
-                                
+                            dataArray[entityIdpointer].entity[entityIndex] = entityDocuments[0].registryDetails.locationId        
                             
                         }catch( err ){
                             console.log(err)
